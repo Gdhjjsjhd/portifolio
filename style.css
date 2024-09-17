@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    color: white;
+    background-color: black;
+    position: relative; /* Adicionando position relative para garantir o posicionamento absoluto correto dos elementos internos */
+}
+
+.nome{
+    margin-left: 200px;
+    height: 200px;
+    width: 500px;
+    font-size: 20px;
+    flex-direction: column;
+    display: flex;
+    margin-top: 100px;
+}
+
+#sesc{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.eu{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    background-color: #00BC60;
+    height: 30px;
+    width: 100%;
+    border-radius: 25px 25px 0px 0px;
+    margin-top: auto;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+
+}
+
+.verde {
+    color: #00BC60;
+}
+
+#Lindo{
+    color:#13FF8C ;
+}
+
+#eu {
+    position: absolute;
+    top: 50%;
+    right: 500px;
+    transform: translateY(-50%);
+    width: 400px;
+    height: auto;
+    z-index: 1; /* Garante que a imagem fique atrás do card se necessário */
+    border: 10px solid transparent;
+    border-image-slice: 1;
+    animation: borderColorAnimation 5s linear infinite;
+}
+
+h2{
+    color: #13FF8C;
+    font-size: 30px;
+}
+
+h5{
+    font-size: 20px;
+}
+
+.macaco{
+   display: flex;
+   justify-content: space-between;
+   max-width: 550px;
+   margin-top: 30px;
+   margin-left: 15px;
+}
+
+h4{
+    font-size: 30px;
+}
+
+@keyframes borderColorAnimation {
+    0% {
+        border-image-source: linear-gradient(45deg, red, #13FF8C, blue);
+    }
+    50% {
+        border-image-source: linear-gradient(45deg, blue, #13FF8C, red);
+    }
+    100% {
+        border-image-source: linear-gradient(45deg, red, #13FF8C, blue);
+    }
+}
+
+
+
+
